@@ -1,18 +1,18 @@
-print("Welcome to My Guess the Number Game")
-n=23
+print("\t========Guess the Number Game==========")
+n=45
 guesses=1
-print("Provided no of Guesses = 9")
-while(guesses <=9 ):
-     number=int(input("Guess the Number:\n"))
-     if number>18:
-        print("You Entered a Greater Input\n")
-     elif number<18:
-        print("You Entered a Lesser Input\n")
-     else:
+print("Provided number of guesses=10")
+while(guesses<=10):
+    n1=int(input("Guess the Number\n"))
+    if n1>45:
+        print("You Enetered a Larger Input !Try Again\n")
+    elif n1<45:
+        print("You Entered a Smaller Input ! Try Again\n")
+    else:
         print("You Won\n")
-        print(guesses,"No. of Guesses You Used")
+        print("No of Guesses Used:",guesses)
         break
-     print(9-guesses,"no of guesses left")
-     guesses=guesses+1
-if(guesses>9):
+    print("No of Guesses Left:",10-guesses)
+    guesses = guesses + 1
+if(guesses>10):
     print("Game Over")
